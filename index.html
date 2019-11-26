@@ -9,6 +9,7 @@
     <!-- inject:css -->
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/intellisense.css">
     
     <!-- endinject -->
     
@@ -21,6 +22,20 @@
             </clipPath>
         </defs>
     </svg>
+    <div id="auto-comp">
+        <div id="autocomplete">
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="tabbed-area">
+            <ul class="tabs group">
+                <li><a id="customObjects">custom objects</a></li>
+                <li><a id="fields">fields</a></li>
+                <li><a id="formulas">functions</a></li>
+                <li><a id="operators">operators</a></li>
+            </ul>
+        </div>
+    </div>
     <!--    -->
     <!--    <div class="fc-la-if">-->
     <!--        <div class="fc-if-canvas">-->
@@ -109,6 +124,7 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   
+    <script src="js/intellisense.js"></script>
     <script src="js/script.js"></script>
     <!-- endinject -->
 </body>
