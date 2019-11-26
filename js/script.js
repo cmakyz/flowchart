@@ -2418,7 +2418,7 @@
       let trialString = `if(TOPLAM_TUTAR<(LIMIT) AND (TOPLAM_TUTAR>FINANS_LIMITI OR TOPLAM_TUTAR_FFF>0);if(ONAYCFO.Equals("Onaylandı");if(TAMAMLANDI_MI.Equals("Evet");( "Tamamlandı" );if(SUREC_SAY>0;if(ONAY_GM.Equals("Reddedildi");"GM tarafindan reddedildi";"GM Onayi Bekliyor");"Siparis Surecinde"));if(ONAYCFO.Equals("Reddedildi");"Finans tarafindan reddedildi";"Finans Onayi Bekliyor"));if(TOPLAM_TUTAR>(LIMIT);if(ONAYCFO.Equals("Onaylandı");if(ONAY_GM.Equals("Onaylandı");( "Siparis Surecinde" );if(ONAY_GM.Equals("Reddedildi");"GM tarafindan reddedildi";"GM Onayi Bekliyor"));if(ONAYCFO.Equals("Reddedildi");"Finans tarafindan reddedildi";"Finans Onayi Bekliyor"));if(TAMAMLANDI_MI.Equals("Evet");"Tamamlandı";if(SUREC_SAY>0;if(ONAY_GM.Equals("Reddedildi");"GM tarafindan reddedildi";"GM Onayi Bekliyor");"Siparis Surecinde"))))`;
         // let trialString = '';
         let flowchartApp = new Formula_FlowchartApp(trialString);
-        let a = new Intellisense(document.querySelector(".editor-container textarea"), document.getElementById("auto-comp"));
+        let a = new Intellisense(document.querySelector(".editor-container textarea"), document.getElementById("auto-comp"), formulas, customObject);
 
         console.log(a);
     };
